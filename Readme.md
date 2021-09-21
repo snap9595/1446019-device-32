@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ильшат Нугаманов](https://up.htmlacademy.ru/htmlcss/32/user/1446019).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
