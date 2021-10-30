@@ -23,10 +23,11 @@
         <button class="header-search-button" type="submit">Найти</button>
       </form>
       <ul class="user-list">
-        <li class="user-list-item"><a class="user-list-link" href="#">Войти</a></li>
-        <li class="user-list-item user-list-item-compare"><a class="user-list-link" href="#">Сравнить</a></li>
-      <!--   <li class="user-list-item "><a class="user-list-link" href="#"></a></li> -->
-        <li class="user-list-item"><a class="user-list-link" href="#">Корзина<span>2</span></a></li>
+        <li class="user-list-item"><a class="user-list-link user-list-item-login " href="#">Войти</a></li>
+        <li class="user-list-item "><a class="user-list-link user-list-item-compare" href="#">Сравнить</a></li>
+        <li class="user-list-item"><a class="user-list-link user-list-item-cart" href="#">Корзина<span
+              class="numbers">2</span></a>
+        </li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -140,70 +141,88 @@
     <section class="page-container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-goods">
-        <li class="popular-goods-item virtual">
-          <a class="popular-goods-item-link" href="#">
-            <p class="visually-hidden">Виртуальная реальность</p>
-          </a>
+        <li class="popular-goods-item">
+          <div class="popular-goods-item-wrap">
+            <a tabindex="-1" class="popular-goods-item-link" href="#">
+              <p class="popular-goods-item-img virtual"></p>
+            </a>
+            <a class="popular-goods-item-text" href="#">Виртуальная реальность</a>
+          </div>
         </li>
-        <li class="popular-goods-item selfi">
-          <a class="popular-goods-item-link " href="catalog.html">
-            <p class="visually-hidden">Моноподы для селфи</p>
-          </a>
+        <li class="popular-goods-item">
+          <div class="popular-goods-item-wrap">
+            <a tabindex="-1" class="popular-goods-item-link" href="#">
+              <p class="popular-goods-item-img selfi"></p>
+            </a>
+            <a class="popular-goods-item-text" href="catalog.html">Моноподы <br> для селфи</a>
+          </div>
         </li>
-        <li class="popular-goods-item action">
-          <a class="popular-goods-item-link" href="#">
-            <p class="visually-hidden">Экшн-камеры</p>
-          </a>
+        <li class="popular-goods-item">
+          <div class="popular-goods-item-wrap">
+            <a tabindex="-1" class="popular-goods-item-link" href="#">
+              <p class="popular-goods-item-img action"></p>
+            </a>
+            <a class="popular-goods-item-text" href="#">Экшн-камеры</a>
+          </div>
         </li>
-        <li class="popular-goods-item fitness-watch">
-          <a class="popular-goods-item-link" href="#">
-            <p class="visually-hidden">Фитнес-браслеты</p>
-          </a>
+        <li class="popular-goods-item">
+          <div class="popular-goods-item-wrap">
+            <a tabindex="-1" class="popular-goods-item-link " href="#">
+              <p class="popular-goods-item-img fitness-watch"></p>
+            </a>
+            <a class="popular-goods-item-text" href="#">Фитнес-браслеты</a>
+          </div>
         </li>
-        <li class="popular-goods-item smart-watch">
-          <a class="popular-goods-item-link" href="#">
-            <p class="visually-hidden">Умные часы</p>
-          </a>
+        <li class="popular-goods-item">
+          <div class="popular-goods-item-wrap">
+            <a tabindex="-1" class="popular-goods-item-link" href="#">
+              <p class="popular-goods-item-img smart-watch"></p>
+            </a>
+            <a class="popular-goods-item-text" href="#">Умные часы</a>
+          </div>
         </li>
-        <li class="popular-goods-item quadcopter">
-          <a class="popular-goods-item-link" href="#">
-            <p class="visually-hidden">Квадрокоптеры</p>
-          </a></li>
+        <li class="popular-goods-item">
+          <div class="popular-goods-item-wrap">
+            <a tabindex="-1" class="popular-goods-item-link" href="#">
+              <p class="popular-goods-item-img quadcopter"></p>
+            </a>
+            <a class="popular-goods-item-text" href="#">Квадрокоптеры</a>
+          </div>
+        </li>
       </ul>
     </section>
     <section class="mail">
       <div class="page-container">
         <h2 class="visually-hidden">Наши сервисы</h2>
-        <button type="button"></button>
-        <button type="button"></button>
-        <button type="button"></button>
         <div class="services-slider">
-          <div>
+          <div class="services-btn">
             <button class="services-btn services-btn-active" type="button">Доставка</button>
             <button class="services-btn" type="button">Гарантия</button>
             <button class="services-btn" type="button">Кредит</button>
           </div>
           <div>
-            <div>
+            <div class="services-slider-wrap">
               <h3 class="title">Доставка</h3>
-              <p class="services-slider-subtitle">Мы с удовольствием доставим ваш товар прямо
+              <p class="services-slider-subtitle delivery-icon">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-          </div>
-          <div class="services-slider">
-            <h3 class="title">Гарантия</h3>
-            <p class="services-slider-subtitle">Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.</p>
-          </div>
-          <div class="services-slider">
-            <h3 class="title">Кредит</h3>
-            <p class="services-slider-subtitle">Залезть в долговую яму стало проще! Кредитные консультанты подберут
-              для
-              вас
-              наиболее выгодные условия
-              кредита. Выгодные для банка, разумеется.</p>
+
+            <div class="services-slider-wrap">
+              <h3 class="title">Гарантия</h3>
+              <p class="services-slider-subtitle warranty-icon">Если из-за возгорания купленного у нас товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+            </div>
+            <div class="services-slider-wrap">
+              <h3 class="title">Кредит</h3>
+              <p class="services-slider-subtitle credit-icon">Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут
+                для
+                вас
+                наиболее выгодные условия
+                кредита. Выгодные для банка, разумеется.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -211,7 +230,7 @@
     <div class="page-container">
       <h2 class="visually-hidden">Доставка</h2>
       <button class="delivery-wrapper">
-        <span class="delivery-wrapper-car" href="#">
+        <span class="delivery-wrapper-car">
           <svg class="svg-car" width="47" height="31" viewBox="0 0 47 31" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)" fill="evenodd">
@@ -228,8 +247,8 @@
           </svg>
           <span class="visually-hidden">Машинка</span>
         </span>
-        <span class="delivery-link" href="#">Доставим редкий товар под заказ</span>
-        <span class="visually-hidden">Доп. информация</span>
+        <span class="delivery-link">Доставим редкий товар под заказ</span>
+        <span class="delivery-info">i</span>
       </button>
     </div>
     <div class="info-wrap page-container">
@@ -249,7 +268,7 @@
       </section>
       <section class="contacts black-layer">
         <h3 class="title">Контакты</h3>
-        <p class="contacts-subtitle">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить
+        <p class="contacts-subtitle">Вы можете забрать товар сами, заехав в наш офис. <br> Заодно сможете проверить
           работоспособность покупки.</p>
         <h4 class="contacts-title">Интернет-магазин «Девайс»</h4>
         <address class="contacts-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
@@ -264,10 +283,10 @@
       <div class="mail-inner page-container">
         <div class="mail-wrapper">
           <div class="mail-wrapper-top">
-            <h3 class="title">Подпишитесь на рассылку</h3>
+            <h3 class="title">Подпишитесь <br> на рассылку</h3>
           </div>
           <div class="mail-wrapper-right">
-            <p class="mail-wrapper-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+            <p class="mail-wrapper-text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
               распаковками, а также акции,
               спецпредложения
               и вот это вот всё.</p>
@@ -275,8 +294,8 @@
         </div>
         <div class="mail-subscribe">
           <form class="mail-form" method="get" action="https://echo.htmlacademy.ru">
-            <input class="mail-form-input" id="subscribe" type="search" name="search" placeholder="Ваш e-mail">
-            <button class="button mail-button " type="submit">Подписаться</button>
+            <input class="mail-form-input" id="subscribe" type="email" name="search" placeholder="Ваш e-mail">
+            <button class=" mail-button " type="submit">Подписаться</button>
           </form>
           <p class="mail-subtitle">Это бесплатно</p>
         </div>
@@ -285,14 +304,14 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer-inner page-container">
-      <a class="footer-logo" aria-current="page"><img src="img/logos/yellow-logo.svg"
+      <a class="footer-logo" aria-current="page"><img src="img/logos/yellow-logo.svg" width="145" height="36"
           alt="Логотип магазина гаджетов - Девайс"></a>
       <div class="footer-info">
         <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
         <div class="footer-info-nav">
-          <a class="button footer-navigation" href="#">Доставка</a>
-          <a class="button footer-navigation" href="#">Гарантия</a>
-          <a class="button footer-navigation" href="#">Контакты</a>
+          <a class="footer-button footer-navigation" href="#">Доставка</a>
+          <a class="footer-button footer-navigation" href="#">Гарантия</a>
+          <a class="footer-button footer-navigation" href="#">Контакты</a>
         </div>
         <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
@@ -300,7 +319,7 @@
         <ul class="footer-social-list yellow-layer">
           <li class="footer-social-item">
             <a class="footer-social-item-link" href="https://www.facebook.com/htmlacademy">
-              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <circle class="circle-background" cx="20" cy="20" r="20" />
                 <path class="path-icon"
                   d="M22.5 14H25v-3h-3.4c-2.8 0-3.6 1.7-3.6 4.2V17h-2v3h2v9h3v-9h3.3l.6-3H21v-1.5c0-.8.3-1.5 1.5-1.5Z" />
@@ -310,7 +329,7 @@
           </li>
           <li class="footer-social-item">
             <a class="footer-social-item-link" href="https://www.instagram.com/htmlacademy/">
-              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <circle class="circle-background" cx="20" cy="20" r="20" />
                 <path class="path-icon" d="M20 22a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
                 <path class="path-icon"
@@ -321,17 +340,10 @@
           </li>
           <li class="footer-social-item">
             <a class="footer-social-item-link" href="https://twitter.com/htmlacademy_ru">
-              <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <circle class="circle-background" cx="20" cy="20" r="20" />
-                <!--  <g clip-path="url(#a)"> -->
                 <path class="path-icon"
                   d="M22.7 13.1c1.5-.5 2.6.3 3.2 1.1l1.7-.6a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
-                <!--  </g>
-                <defs>
-                  <clipPath id="a">
-                    <path  transform="translate(13 13)" d="M0 0h15v14H0z" />
-                  </clipPath>
-                </defs> -->
               </svg>
               <span class="visually-hidden">Twitter</span>
             </a>
@@ -375,7 +387,6 @@
               d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"
               fill="evenodd" />
           </svg>
-
           <span class="visually-hidden">Html Academy</span>
         </a>
       </div>
