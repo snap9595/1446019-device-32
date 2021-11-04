@@ -32,19 +32,25 @@
     </div>
     <nav class="main-navigation">
       <ul class="main-navigation-item">
-        <li class="main-navigation-list"><a class="main-navigation-list-link" href="catalog.html">Каталог товаров</a>
-          <ul class="main-navigation-inside">
-            <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Виртуальная
-                реальность</a></li>
-            <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="catalog.html">Моноподы
-                для селфи</a></li>
-            <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Экшн-камеры</a></li>
-            <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Умные часы</a></li>
-            <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+        <li class="main-navigation-list main-navigation-inside-catalog"><a class="main-navigation-list-link"
+            href="catalog.html">Каталог товаров</a>
+          <div class="main-navigation-inside-wrap">
+            <ul class="main-navigation-inside">
+              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Виртуальная
+                  реальность</a></li>
+              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Моноподы
+                  для селфи</a></li>
+              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link"
+                  href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Умные часы</a>
+              </li>
+              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="main-navigation-list"><a class="main-navigation-list-link" href="#">Доставка</a></li>
         <li class="main-navigation-list"><a class="main-navigation-list-link" href="#">Гарантия</a></li>
@@ -55,21 +61,36 @@
   <main class="main-container">
     <section class="slider page-container">
       <h2 class="visually-hidden">Cлайдер</h2>
-      <div>
-        <button type="button" class="back"></button>
-        <button type="button" class="forward"></button>
-        <button type="button" class="pag-point"></button>
-        <button type="button" class="pag-point"></button>
-        <button type="button" class="pag-point"></button>
+      <div class="slider-controls">
+        <button type="button" class="slider-button back"></button>
+        <button type="button" class="slider-button forward"></button>
       </div>
-      <section class="slide">
+      <ol class="slider-pagination">
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <span class="visually-hidden">1 слайд</span>
+          </button>
+        </li>
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button " type="button">
+            <span class="visually-hidden">2 слайд</span>
+          </button>
+        </li>
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">3 слайд</span>
+          </button>
+        </li>
+      </ol>
+      <section class="slide slide-active">
         <div class="slider-img">
           <a href="#"><img src="./img/slider/quadcopter-slider.png" alt="Квадрокоптер" width="560" height="560">
           </a>
+
         </div>
         <div class="slider-info">
           <a class="slider-link" href="#">
-            <h3 class="title">Порхает как бабочка,жалит как пчела!</h3>
+            <h3 class="title">Порхает как бабочка, жалит как пчела!</h3>
           </a>
           <p class="slider-subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным
@@ -88,7 +109,7 @@
           </ul>
         </div>
       </section>
-      <section class="slide">
+      <section class="slide ">
         <div class="slider-img">
           <a href="#"><img src="./img/slider/fitness-watch-slider.png" alt="Фитнес-браслеты" width="560"
               height="560"></a>
@@ -108,13 +129,13 @@
           </ul>
         </div>
       </section>
-      <section class="slide">
+      <section class="slide ">
         <div class="slider-img">
           <a href="#"><img src="./img/slider/selfi-slider.png" alt="Квадрокоптер" width="560" height="560"> </a>
         </div>
         <div class="slider-info">
           <a class="slider-link" href="#">
-            <h3 class="title">Делай селфи, как Бен Стиллер! </h3>
+            <h3 class="title">Делай селфи, <br> как Бен Стиллер! </h3>
           </a>
           <p class="slider-subtitle">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
             метров длиной и весом всего 5
@@ -137,84 +158,90 @@
           </ul>
         </div>
       </section>
+
     </section>
     <section class="page-container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-goods">
         <li class="popular-goods-item">
-          <div class="popular-goods-item-wrap">
-            <a tabindex="-1" class="popular-goods-item-link" href="#">
-              <p class="popular-goods-item-img virtual"></p>
-            </a>
-            <a class="popular-goods-item-text" href="#">Виртуальная реальность</a>
-          </div>
+          <a class="popular-goods-item-link" href="#">
+            <div class="popular-goods-item-wrap">
+              <div class="popular-goods-item-img virtual">
+              </div>
+              <p class="popular-goods-item-text">Виртуальная реальность</p>
+            </div>
+          </a>
         </li>
         <li class="popular-goods-item">
-          <div class="popular-goods-item-wrap">
-            <a tabindex="-1" class="popular-goods-item-link" href="#">
-              <p class="popular-goods-item-img selfi"></p>
-            </a>
-            <a class="popular-goods-item-text" href="catalog.html">Моноподы <br> для селфи</a>
-          </div>
+          <a class="popular-goods-item-link" href="catalog.html">
+            <div class="popular-goods-item-wrap">
+              <div class="popular-goods-item-img selfi">
+              </div>
+              <p class="popular-goods-item-text">Моноподы <br> для селфи</p>
+            </div>
+          </a>
         </li>
         <li class="popular-goods-item">
-          <div class="popular-goods-item-wrap">
-            <a tabindex="-1" class="popular-goods-item-link" href="#">
-              <p class="popular-goods-item-img action"></p>
-            </a>
-            <a class="popular-goods-item-text" href="#">Экшн-камеры</a>
-          </div>
+          <a class="popular-goods-item-link" href="#">
+            <div class="popular-goods-item-wrap">
+              <div class="popular-goods-item-img action">
+              </div>
+              <p class="popular-goods-item-text">Экшн-камеры</p>
+            </div>
+          </a>
         </li>
         <li class="popular-goods-item">
-          <div class="popular-goods-item-wrap">
-            <a tabindex="-1" class="popular-goods-item-link " href="#">
-              <p class="popular-goods-item-img fitness-watch"></p>
-            </a>
-            <a class="popular-goods-item-text" href="#">Фитнес-браслеты</a>
-          </div>
+          <a class="popular-goods-item-link" href="#">
+            <div class="popular-goods-item-wrap">
+              <div class="popular-goods-item-img fitness-watch">
+              </div>
+              <p class="popular-goods-item-text">Фитнес-браслеты</p>
+            </div>
+          </a>
         </li>
         <li class="popular-goods-item">
-          <div class="popular-goods-item-wrap">
-            <a tabindex="-1" class="popular-goods-item-link" href="#">
-              <p class="popular-goods-item-img smart-watch"></p>
-            </a>
-            <a class="popular-goods-item-text" href="#">Умные часы</a>
-          </div>
+          <a class="popular-goods-item-link" href="#">
+            <div class="popular-goods-item-wrap">
+              <div class="popular-goods-item-img smart-watch">
+              </div>
+              <p class="popular-goods-item-text">Умные часы</p>
+            </div>
+          </a>
         </li>
         <li class="popular-goods-item">
-          <div class="popular-goods-item-wrap">
-            <a tabindex="-1" class="popular-goods-item-link" href="#">
-              <p class="popular-goods-item-img quadcopter"></p>
-            </a>
-            <a class="popular-goods-item-text" href="#">Квадрокоптеры</a>
-          </div>
+          <a class="popular-goods-item-link" href="#">
+            <div class="popular-goods-item-wrap">
+              <div class="popular-goods-item-img quadcopter">
+              </div>
+              <p class="popular-goods-item-text">Квадрокоптеры</p>
+            </div>
+          </a>
         </li>
       </ul>
     </section>
-    <section class="mail">
+    <section class="delivery-slider">
       <div class="page-container">
         <h2 class="visually-hidden">Наши сервисы</h2>
         <div class="services-slider">
-          <div class="services-btn">
-            <button class="services-btn services-btn-active" type="button">Доставка</button>
-            <button class="services-btn" type="button">Гарантия</button>
-            <button class="services-btn" type="button">Кредит</button>
+          <div class="services-btn-wrap">
+            <button class="product-button services-btn services-btn-active" type="button">Доставка</button>
+            <button class="product-button services-btn  " type="button">Гарантия</button>
+            <button class="product-button services-btn  " type="button">Кредит</button>
           </div>
-          <div>
-            <div class="services-slider-wrap">
+          <div class="services-slider-right">
+            <div class="services-slider-wrap services-slider-wrap-active">
               <h3 class="title">Доставка</h3>
               <p class="services-slider-subtitle delivery-icon">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-
-            <div class="services-slider-wrap">
+            <div class="services-slider-wrap ">
               <h3 class="title">Гарантия</h3>
               <p class="services-slider-subtitle warranty-icon">Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
             </div>
-            <div class="services-slider-wrap">
+            <div class="services-slider-wrap  ">
               <h3 class="title">Кредит</h3>
               <p class="services-slider-subtitle credit-icon">Залезть в долговую яму стало проще! Кредитные консультанты
                 подберут
