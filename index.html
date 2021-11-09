@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  <!-- 
+    1. не смог решить как спрятать плюсик где каталог товаров,остальные псевдо нормально работают :66
+    2. Не знаю как двигать кнопки хедера "Войти" "Сравнить""Корзина", можно наверное абсолютом но думаю такое себе решение, :31
+    3.В каталоге где фильтр где раздел bluetooth не могу подогнать под pixel perfect :1844
+   -->
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин "DEVICE"</h1>
     <a class="header-logo" aria-current="page"><img src="./img/logos/logo.svg" width="145" height="36"
@@ -27,27 +32,52 @@
         <li class="user-list-item "><a class="user-list-link user-list-item-compare" href="#">Сравнить</a></li>
         <li class="user-list-item"><a class="user-list-link user-list-item-cart" href="#">Корзина<span
               class="numbers">2</span></a>
+          <div class="popover-cart ">
+            <ul class="popover-cart-list">
+              <li class="popover-cart-item">
+                <a class="popover-cart-item-link" href="#"><img src="./img/amateur-selfie.jpg" class="pic"
+                    alt="Любительская селфи-палка" width="41" height="43">
+                  <p class="popover-cart-item-text"> Любительская селфи-палка</p>
+                </a>
+                <button class="delete"><span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="popover-cart-item">
+                <a class="popover-cart-item-link" href="#">
+                  <img src="./img/prof-selfie.jpg" class="pic" alt="Любительская селфи-палка" width="41" height="43">
+                  <p class="popover-cart-item-text"> Профессиональная селфи-палка</p>
+                </a>
+                <button class="delete"><span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <div class="popover-cart-goods">
+              <p class="popover-cart-goods-text">Товаров: <span>2</span></p>
+              <p class="popover-cart-goods-text">Сумма: <span>2000 &#8381;</span> </p>
+            </div>
+            <button class="open-cart">Открыть корзину</button>
+          </div>
         </li>
       </ul>
     </div>
     <nav class="main-navigation">
       <ul class="main-navigation-item">
-        <li class="main-navigation-list main-navigation-inside-catalog"><a class="main-navigation-list-link"
-            href="catalog.html">Каталог товаров</a>
-          <div class="main-navigation-inside-wrap">
+        <li class="main-navigation-list main-navigation-inside-catalog">
+          <a class="main-navigation-list-link  main-navigation-list-link-circle" href="catalog.html">Каталог товаров</a>
+          <span class="main-navigation-link-catalog"></span>
+          <div class="catalog-wrap">
             <ul class="main-navigation-inside">
-              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Виртуальная
-                  реальность</a></li>
-              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Моноподы
-                  для селфи</a></li>
-              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Экшн-камеры</a>
+              <li class="main-navigation-inside-list">
+                <a class="main-navigation-inside-link" href="#">Виртуальная реальность</a>
+                <a class="main-navigation-inside-link" href="catalog.html">Моноподы для селфи</a>
+                <a class="main-navigation-inside-link" href="#">Экшн-камеры</a>
               </li>
-              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link"
-                  href="#">Фитнес-браслеты</a>
+              <li class="main-navigation-inside-list">
+                <a class="main-navigation-inside-link" href="#">Фитнес-браслеты</a>
+                <a class="main-navigation-inside-link" href="#">Умные часы</a>
               </li>
-              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Умные часы</a>
-              </li>
-              <li class="main-navigation-inside-list"><a class="main-navigation-inside-link" href="#">Квадрокоптеры</a>
+              <li class="main-navigation-inside-list">
+                <a class="main-navigation-inside-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </div>
@@ -224,16 +254,15 @@
         <h2 class="visually-hidden">Наши сервисы</h2>
         <div class="services-slider">
           <div class="services-btn-wrap">
-            <button class="product-button services-btn services-btn-active" type="button">Доставка</button>
-            <button class="product-button services-btn  " type="button">Гарантия</button>
-            <button class="product-button services-btn  " type="button">Кредит</button>
+            <button class="button services-btn services-btn-active" type="button">Доставка</button>
+            <button class="button services-btn  " type="button">Гарантия</button>
+            <button class="button services-btn  " type="button">Кредит</button>
           </div>
           <div class="services-slider-right">
             <div class="services-slider-wrap services-slider-wrap-active">
               <h3 class="title">Доставка</h3>
-              <p class="services-slider-subtitle delivery-icon">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="services-slider-subtitle delivery-icon">Мы с удовольствием доставим ваш товар прямо <br> к
+                вашему подъезду совершенно бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
             <div class="services-slider-wrap ">
               <h3 class="title">Гарантия</h3>
@@ -291,7 +320,7 @@
           <li class="about-us-item">СДИК</li>
           <li class="about-us-item">ТоксБерри</li>
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
+        <a class="button button-info" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts black-layer">
         <h3 class="title">Контакты</h3>
@@ -303,7 +332,7 @@
         <h4 class="contacts-title">Время работы</h4>
         <p class="contacts-work">пн—пт: с 10:00 до 22:00</p>
         <p class="contacts-work">сб—вс: с 10:00 до 19:00</p>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button button-info" href="#">Напишите нам</a>
       </section>
     </div>
     <section class="mail">
@@ -321,7 +350,7 @@
         </div>
         <div class="mail-subscribe">
           <form class="mail-form" method="get" action="https://echo.htmlacademy.ru">
-            <input class="mail-form-input" id="subscribe" type="email" name="search" placeholder="Ваш e-mail">
+            <input class="mail-form-input" id="subscribe" type="email" name="search" placeholder="Ваш e-mail" required>
             <button class=" mail-button " type="submit">Подписаться</button>
           </form>
           <p class="mail-subtitle">Это бесплатно</p>
@@ -419,6 +448,57 @@
       </div>
     </div>
   </footer>
+  <div class="modal-container modal-container-close ">
+    <div class="modal modal-delivery">
+      <button class="close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h1 class="title ">Доставка под заказ</h1>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group delivery-form-name">
+            <label class="delivery-title delivery-form-name-icon" for="delivery-name">Ваше имя:</label>
+            <input class="delivery-input " type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия"
+              required>
+            <span class="delivery-subtitle">Пожалуйста, представьтесь</span>
+          </p>
+          <p class="field-group delivery-form-e-mail">
+            <label class="delivery-title delivery-form-e-mail-icon" for="e-mail">Ваш e-mail:</label>
+            <input class="delivery-input" id="e-mail" type="email" name="e-mail" placeholder="krasotka92@mail.ru"
+              required>
+            <span class="delivery-subtitle">Забавный у вас адрес</span>
+          </p>
+          <p class="field-group">
+            <label class="delivery-title " for="text-form">Что нужно привезти:</label>
+            <input class="delivery-input delivery-input-text" id="text-form" type="text" name="text-form"
+              placeholder="В свободной форме">
+          </p>
+          <div class="field-group delivery-form-amount">
+            <label class="delivery-title amount-subtitle" for="amount-info">Количество:
+              <button tabindex="-1" class="info" id="amount-info">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+            </label>
+            <div class="popover-amout">
+              <p class="popover-amout-text">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>
+                к провозу багажа.
+              </p>
+            </div>
+            <div class="amount-wrap">
+              <button class="amount-button input-button-minus" type="button"><span class="visually-hidden">Уменьшить
+                  количество взрослых</span></button>
+              <label for="amount"></label>
+              <input class="amount-input" type="number" id="amount" name="amount" min="1" max="100" step="1" value="1">
+              <button class="amount-button input-button-plus" type="button"><span class="visually-hidden">Увеличить
+                  количество взрослых</span></button>
+            </div>
+          </div>
+          <button class="button button-delivery-form" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
