@@ -19,7 +19,8 @@
         alt="Логотип магазина гаджетов - Девайс"></a>
     <div class="main-nav-top">
       <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
-        <input class="header-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+        <input class="header-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту"
+          required>
         <button class="header-search-button" type="submit">Найти</button>
       </form>
       <ul class="user-list">
@@ -78,11 +79,11 @@
               <legend class="filter-subtitle">Стоимость</legend>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 110px">
-                    <button class="range-toggle toggle-min">
+                  <div class="range-bar" style="left: 0; width: 110px;">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -93,7 +94,7 @@
                     от<input class="range-input" type="number" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-label">
-                    до<input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
+                    до<input class="range-input" type="number" value="5000" name="max-price" style="width: 50px;">
                   </label>
                 </div>
 
@@ -160,17 +161,17 @@
               <legend class="filter-subtitle">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label for="filter-control-1" class="control">
-                    <input id="filter-control-1" class="visually-hidden control-input" type="radio" name="bluetooth"
-                      value="yes" checked>
+                  <label for="with-bluetooth" class="control">
+                    <input id="with-bluetooth" class="visually-hidden control-input" type="radio" name="bluetooth"
+                      value="with-bluetooth" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label for="filter-control-2" class="control">
-                    <input id="filter-control-2" class="visually-hidden control-input" type="radio" name="bluetooth"
-                      value="no">
+                  <label for="without-bluetooth" class="control">
+                    <input id="without-bluetooth" class="visually-hidden control-input" type="radio" name="bluetooth"
+                      value="without-bluetooth">
                     <span class="control-mark"></span>
                     <span class="control-label">Нет</span>
                   </label>
@@ -188,7 +189,18 @@
               <summary class="sorting-details-summary">
                 Сначала популярные
               </summary>
-              <p>text</p>
+              <div class="sorting-details-wrap">
+                <ul class="sorting-details-item">
+                  <li class="sorting-details-list"><a class="sorting-details-list-link" href="#">По рейтингу</a>
+                  </li>
+                  <li class="sorting-details-list"><a class="sorting-details-list-link" href="#">По отзывам</a>
+                  </li>
+                  <li class="sorting-details-list"><a class="sorting-details-list-link" href="#">По обзорам</a>
+                  </li>
+                  <li class="sorting-details-list"><a class="sorting-details-list-link" href="#">По названию</a>
+                  </li>
+                </ul>
+              </div>
             </details>
             <ul class="sorting-breadcrumbs-list">
               <li class="sorting-breadcrumbs-item">
@@ -215,7 +227,7 @@
                 </div>
               </a>
               <div class="product-card-hover">
-                <a class="button button-product" href="#">Подробнее</a>
+                <a class="button button-product" href="1">Подробнее</a>
               </div>
             </article>
             <article class="product-card">
@@ -367,7 +379,57 @@
     </div>
 
   </footer>
-
+  <div class="modal-container">
+    <div class="modal modal-delivery">
+      <button class="close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h1 class="title ">Доставка под заказ</h1>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group delivery-form-name">
+            <label class="delivery-title delivery-form-name-icon" for="delivery-name">Ваше имя:</label>
+            <input class="delivery-input " type="text" id="delivery-name" name="delivery-name" placeholder="Имя Фамилия"
+              required>
+            <span class="delivery-subtitle">Пожалуйста, представьтесь</span>
+          </p>
+          <p class="field-group delivery-form-e-mail">
+            <label class="delivery-title delivery-form-e-mail-icon" for="e-mail">Ваш e-mail:</label>
+            <input class="delivery-input" id="e-mail" type="email" name="e-mail" placeholder="krasotka92@mail.ru"
+              required>
+            <span class="delivery-subtitle">Забавный у вас адрес</span>
+          </p>
+          <p class="field-group">
+            <label class="delivery-title " for="text-form">Что нужно привезти:</label>
+            <input class="delivery-input delivery-input-text" id="text-form" type="text" name="text-form"
+              placeholder="В свободной форме">
+          </p>
+          <div class="field-group delivery-form-amount">
+            <label class="delivery-title amount-subtitle" for="amount-info">Количество:
+              <button tabindex="-1" class="info" id="amount-info">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+            </label>
+            <div class="popover-amout">
+              <p class="popover-amout-text">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>
+                к провозу багажа.
+              </p>
+            </div>
+            <div class="amount-wrap">
+              <button class="amount-button input-button-minus" type="button"><span class="visually-hidden">Уменьшить
+                  количество взрослых</span></button>
+              <label for="amount"></label>
+              <input class="amount-input" type="number" id="amount" name="amount" min="1" max="100" step="1" value="1">
+              <button class="amount-button input-button-plus" type="button"><span class="visually-hidden">Увеличить
+                  количество взрослых</span></button>
+            </div>
+          </div>
+          <button class="button button-delivery-form" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
