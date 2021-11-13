@@ -20,24 +20,29 @@
         alt="Логотип магазина гаджетов - Девайс"></a>
     <div class="main-nav-top">
       <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
+        <label for="search">
+          <span class="visually-hidden">Поиск</span>
+        </label>
         <input class="header-search-input" id="search" type="search" name="search" placeholder="Поиск по сайту"
           required>
         <button class="header-search-button" type="submit">Найти</button>
       </form>
       <ul class="user-list">
         <li class="user-list-item">
-          <a class="user-list-link user-list-item-login " href="#">Войти</a>
+          <a class="user-list-link user-list-item-login " href="blank.html">Войти</a>
         </li>
         <li class="user-list-item ">
-          <a class="user-list-link user-list-item-compare" href="#">Сравнить</a>
+          <a class="user-list-link user-list-item-compare" href="blank.html">Сравнить</a>
         </li>
         <li class="user-list-item">
-          <a class="user-list-link user-list-item-cart" href="#">Корзина<span class="numbers">2</span>
+          <a class="user-list-link user-list-item-cart" href="blank.html">Корзина<span class="numbers">2</span>
           </a>
           <div class="popover-cart ">
+            <!-- popover-open -->
+            <h2 class="visually-hidden">Корзина</h2>
             <ul class="popover-cart-list">
               <li class="popover-cart-item">
-                <a class="popover-cart-item-link" href="#"><img src="./img/amateur-selfie.jpg" class="pic"
+                <a class="popover-cart-item-link" href="blank.html"><img src="./img/amateur-selfie.jpg" class="pic"
                     alt="Любительская селфи-палка" width="41" height="43">
                   <p class="popover-cart-item-text"> Любительская селфи-палка</p>
                 </a>
@@ -45,7 +50,7 @@
                 </button>
               </li>
               <li class="popover-cart-item">
-                <a class="popover-cart-item-link" href="#">
+                <a class="popover-cart-item-link" href="blank.html">
                   <img src="./img/prof-selfie.jpg" class="pic" alt="Любительская селфи-палка" width="41" height="43">
                   <p class="popover-cart-item-text"> Профессиональная селфи-палка</p>
                 </a>
@@ -71,23 +76,23 @@
           <div class="catalog-wrap">
             <ul class="main-navigation-inside">
               <li class="main-navigation-inside-list">
-                <a class="main-navigation-inside-link" href="#">Виртуальная реальность</a>
+                <a class="main-navigation-inside-link" href="blank.html">Виртуальная реальность</a>
                 <a class="main-navigation-inside-link" href="catalog.html">Моноподы для селфи</a>
-                <a class="main-navigation-inside-link" href="#">Экшн-камеры</a>
+                <a class="main-navigation-inside-link" href="blank.html">Экшн-камеры</a>
               </li>
               <li class="main-navigation-inside-list">
-                <a class="main-navigation-inside-link" href="#">Фитнес-браслеты</a>
-                <a class="main-navigation-inside-link" href="#">Умные часы</a>
+                <a class="main-navigation-inside-link" href="blank.html">Фитнес-браслеты</a>
+                <a class="main-navigation-inside-link" href="blank.html">Умные часы</a>
               </li>
               <li class="main-navigation-inside-list">
-                <a class="main-navigation-inside-link" href="#">Квадрокоптеры</a>
+                <a class="main-navigation-inside-link" href="blank.html">Квадрокоптеры</a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="main-navigation-list"><a class="main-navigation-list-link" href="#">Доставка</a></li>
-        <li class="main-navigation-list"><a class="main-navigation-list-link" href="#">Гарантия</a></li>
-        <li class="main-navigation-list"><a class="main-navigation-list-link" href="#">Контакты</a></li>
+        <li class="main-navigation-list"><a class="main-navigation-list-link" href="blank.html">Доставка</a></li>
+        <li class="main-navigation-list"><a class="main-navigation-list-link" href="blank.html">Гарантия</a></li>
+        <li class="main-navigation-list"><a class="main-navigation-list-link" href="blank.html">Контакты</a></li>
       </ul>
     </nav>
 
@@ -97,41 +102,45 @@
     <section class="slider page-container">
       <h2 class="visually-hidden">Cлайдер</h2>
       <div class="slider-controls">
-        <button type="button" class="slider-button back"></button>
-        <button type="button" class="slider-button forward"></button>
+        <button type="button" class="slider-button back">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button type="button" class="slider-button forward">
+          <span class="visually-hidden">Следущий слайд</span>
+        </button>
       </div>
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden">1 слайд</span>
+            <span class="visually-hidden">1-ый слайд</span>
           </button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button " type="button">
-            <span class="visually-hidden">2 слайд</span>
+            <span class="visually-hidden">2-ый слайд</span>
           </button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">3 слайд</span>
+            <span class="visually-hidden">3-ый слайд</span>
           </button>
         </li>
       </ol>
 
       <section class="slide slide-active">
         <div class="slider-img">
-          <a href="#"><img src="./img/slider/quadcopter-slider.png" alt="Квадрокоптер" width="560" height="560">
+          <a href="blank.html"><img src="./img/slider/quadcopter-slider.png" alt="Квадрокоптер" width="560" height="560">
           </a>
         </div>
         <div class="slider-info">
-          <a class="slider-link" href="#">
+          <a class="slider-link" href="blank.html">
             <h3 class="title">Порхает как бабочка, жалит как пчела!</h3>
           </a>
           <p class="slider-subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным
             под стандартную камеру.
           </p>
-          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="blank.html">Подробнее</a>
           <ul class="slider-list">
             <li class="slider-list-item">
               <span class="slider-advantage">800 м</span>
@@ -147,16 +156,16 @@
 
       <section class="slide ">
         <div class="slider-img">
-          <a href="#"><img src="./img/slider/fitness-watch-slider.png" alt="Фитнес-браслеты" width="560"
+          <a href="blank.html"><img src="./img/slider/fitness-watch-slider.png" alt="Фитнес-браслеты" width="560"
               height="560"></a>
         </div>
         <div class="slider-info">
-          <a class="slider-link" href="#">
+          <a class="slider-link" href="blank.html">
             <h3 class="title">Худеем <br> правильно!</h3>
           </a>
           <p class="slider-subtitle">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
             соблюдать диету.</p>
-          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="blank.html">Подробнее</a>
           <ul class="slider-list">
             <li class="slider-list-item">
               <span class="slider-advantage">48 часов</span>
@@ -168,17 +177,17 @@
 
       <section class="slide ">
         <div class="slider-img">
-          <a href="#"><img src="./img/slider/selfi-slider.png" alt="Квадрокоптер" width="560" height="560"> </a>
+          <a href="blank.html"><img src="./img/slider/selfi-slider.png" alt="Квадрокоптер" width="560" height="560"> </a>
         </div>
         <div class="slider-info">
-          <a class="slider-link" href="#">
+          <a class="slider-link" href="blank.html">
             <h3 class="title">Делай селфи, <br> как Бен Стиллер! </h3>
           </a>
           <p class="slider-subtitle">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
             метров длиной и весом всего 5
             кг.
           </p>
-          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="blank.html">Подробнее</a>
           <ul class="slider-list">
             <li class="slider-list-item">
               <span class="slider-advantage">8,5 м</span>
@@ -201,7 +210,7 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-goods">
         <li class="popular-goods-item">
-          <a class="popular-goods-item-link" href="#">
+          <a class="popular-goods-item-link" href="blank.html">
             <div class="popular-goods-item-wrap">
               <div class="popular-goods-item-img virtual">
               </div>
@@ -219,7 +228,7 @@
           </a>
         </li>
         <li class="popular-goods-item">
-          <a class="popular-goods-item-link" href="#">
+          <a class="popular-goods-item-link" href="blank.html">
             <div class="popular-goods-item-wrap">
               <div class="popular-goods-item-img action">
               </div>
@@ -228,7 +237,7 @@
           </a>
         </li>
         <li class="popular-goods-item">
-          <a class="popular-goods-item-link" href="#">
+          <a class="popular-goods-item-link" href="blank.html">
             <div class="popular-goods-item-wrap">
               <div class="popular-goods-item-img fitness-watch">
               </div>
@@ -237,7 +246,7 @@
           </a>
         </li>
         <li class="popular-goods-item">
-          <a class="popular-goods-item-link" href="#">
+          <a class="popular-goods-item-link" href="blank.html">
             <div class="popular-goods-item-wrap">
               <div class="popular-goods-item-img smart-watch">
               </div>
@@ -246,7 +255,7 @@
           </a>
         </li>
         <li class="popular-goods-item">
-          <a class="popular-goods-item-link" href="#">
+          <a class="popular-goods-item-link" href="blank.html">
             <div class="popular-goods-item-wrap">
               <div class="popular-goods-item-img quadcopter">
               </div>
@@ -294,7 +303,7 @@
         <span class="delivery-wrapper-car">
           <svg class="svg-car" width="47" height="31" viewBox="0 0 47 31" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#a)" fill="evenodd">
+            <g clip-path="url(blank.htmla)" fill="evenodd">
               <path
                 d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2V24.7H15.8a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z" />
               <path
@@ -302,14 +311,15 @@
             </g>
             <defs>
               <clipPath id="a">
-                <path fill="#fff" d="M0 0h47v31H0z" />
+                <path fill="blank.htmlfff" d="M0 0h47v31H0z" />
               </clipPath>
             </defs>
           </svg>
-          <span class="visually-hidden">Машинка</span>
+          <span class="visually-hidden">Машина svg.</span>
         </span>
         <span class="delivery-link">Доставим редкий товар под заказ</span>
         <span class="delivery-info">i</span>
+        <span class="visually-hidden">Дополнительная информация.</span>
       </button>
     </div>
 
@@ -326,7 +336,7 @@
           <li class="about-us-item">СДИК</li>
           <li class="about-us-item">ТоксБерри</li>
         </ul>
-        <a class="button button-info" href="#">Подробнее о нас</a>
+        <a class="button button-info" href="blank.html">Подробнее о нас</a>
       </section>
       <section class="contacts black-layer">
         <h3 class="title">Контакты</h3>
@@ -338,7 +348,7 @@
         <h4 class="contacts-title">Время работы</h4>
         <p class="contacts-work">пн—пт: с 10:00 до 22:00</p>
         <p class="contacts-work">сб—вс: с 10:00 до 19:00</p>
-        <a class="button button-info" href="#">Напишите нам</a>
+        <a class="button button-info" href="blank.html">Напишите нам</a>
       </section>
     </div>
 
@@ -374,9 +384,9 @@
       <div class="footer-info">
         <address class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
         <div class="footer-info-nav">
-          <a class="footer-button footer-navigation" href="#">Доставка</a>
-          <a class="footer-button footer-navigation" href="#">Гарантия</a>
-          <a class="footer-button footer-navigation" href="#">Контакты</a>
+          <a class="footer-button footer-navigation" href="blank.html">Доставка</a>
+          <a class="footer-button footer-navigation" href="blank.html">Гарантия</a>
+          <a class="footer-button footer-navigation" href="blank.html">Контакты</a>
         </div>
         <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
@@ -459,6 +469,7 @@
   </footer>
 
   <div class="modal-container ">
+    <!-- modal-container-open -->
     <div class="modal modal-delivery">
       <button class="close">
         <span class="visually-hidden">Закрыть</span>
@@ -484,22 +495,23 @@
               placeholder="В свободной форме">
           </p>
           <div class="field-group delivery-form-amount">
-            <div class="delivery-title amount-subtitle" >Количество:
-              <button  class="info" id="amount-info">
+            <div class="delivery-title amount-subtitle">Количество:
+              <button class="info" type="button" >
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
-            </div>
-            <div class="popover-amout">
+              <div class="popover-amout">
               <p class="popover-amout-text">
                 Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>
                 к провозу багажа.
               </p>
             </div>
+            </div>
+            
             <div class="amount-wrap">
               <button class="amount-button input-button-minus" type="button">
                 <span class="visually-hidden">Уменьшить количество </span>
               </button>
-              <label class="visually-hidden" for="amount">кол-во товаров</label>
+              <label class="visually-hidden" for="amount">количество товаров</label>
               <input class="amount-input" type="number" id="amount" name="amount" min="1" max="100" step="1" value="1">
               <button class="amount-button input-button-plus" type="button">
                 <span class="visually-hidden">Увеличить количество </span>
