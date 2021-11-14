@@ -212,6 +212,9 @@ img {
   flex-shrink: 0;
   width: 361px;
   padding-left: 52px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
   outline: none;
   background: transparent;
   border: 2px solid transparent;
@@ -243,6 +246,10 @@ img {
   flex-shrink: 0;
   width: 157px;
   height: 40px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
   background: transparent;
   border: 2px solid var(--black);
   border-radius: 0 20px 20px 0;
@@ -292,6 +299,8 @@ img {
   height: 20px;
   margin-left: -38px;
   padding: 7px 21px 9px 5px;
+  font-size: 16px;
+  line-height: 19px;
   color: inherit;
   text-decoration: none;
   outline: none;
@@ -372,7 +381,7 @@ img {
   position: absolute;
   z-index: 10;
   margin: 0;
-  top: 31px;
+  top: 32px;
   display: none;
   right: -60px;
   width: 320px;
@@ -395,13 +404,13 @@ img {
 .popover-cart-list::before {
   position: absolute;
   content: "";
-  top: -7px;
-  right: 154px;
+  top: -6px;
+  right: 156px;
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 7px solid var(--black);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 6px solid var(--black);
 }
 
 .popover-cart-item {
@@ -442,6 +451,8 @@ img {
   display: block;
   margin: 0;
   padding-left: 3px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .delete {
@@ -495,14 +506,20 @@ img {
 }
 
 .open-cart {
+  display: block;
   margin: 20px;
   width: 280px;
-  min-height: 50px;
-  padding-left: 10px;
+  min-height: 49px;
+  padding: 13px 7px 13px 9px;
   font-family: "Railway", "Impact", sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
   letter-spacing: 0.2em;
+  text-decoration: none;
   text-transform: uppercase;
   outline: none;
   border: none;
@@ -625,9 +642,7 @@ img {
 }
 
 .page-content-header {
-  padding-top: 37px;
-  padding-bottom: 16px;
-  padding-left: 61px;
+  padding: 38px 61px 15px;
 }
 
 .slider {
@@ -697,7 +712,7 @@ img {
 .slider-pagination {
   position: absolute;
   z-index: 2;
-  top: 350px;
+  bottom: 189px;
   right: 50px;
   display: flex;
   justify-content: center;
@@ -781,7 +796,7 @@ img {
 }
 
 .slider-subtitle {
-  margin: 28px 0 40px;
+  margin: 23px 0 40px;
 }
 
 .slider-advantage {
@@ -819,7 +834,7 @@ img {
 .main-navigation-item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   max-width: 1160px;
   margin: 0;
   padding: 0;
@@ -1149,13 +1164,15 @@ img {
   margin: 0;
   padding: 0;
   font-family: "Railway", "Impact", sans-serif;
+  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: var(--black);
 }
 
 .slider .title {
-  margin-top: 122px;
+  padding: 5px 0;
+  margin-top: 117px;
 }
 
 .services-slider-right {
@@ -1250,18 +1267,18 @@ img {
   background-color: var(--yellow);
 }
 
-.delivery-wrapper:focus {
+.delivery-wrapper:focus-within {
   box-shadow: 0 0 0 5px var(--purple);
 }
 
-.delivery-wrapper:focus:not(:focus-visible) {
+/* .delivery-wrapper:focus:not(:focus-visible) {
   box-shadow: none;
 }
 
 .delivery-wrapper:focus-visible {
   box-shadow: 0 0 0 5px var(--purple);
 }
-
+ */
 .delivery-wrapper:active .delivery-link {
   color: var(--transparent-black30);
 }
@@ -1273,6 +1290,7 @@ img {
 .delivery-link {
   padding: 0 138px 0 142px;
   font-family: "Railway", "Impact", sans-serif;
+  font-weight: 800;
   font-size: 20px;
   line-height: 23px;
   color: var(--black);
@@ -1314,6 +1332,8 @@ img {
 
 .about-us-subtitle {
   margin: 0;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .about-us p:first-of-type {
@@ -1456,6 +1476,8 @@ img {
   height: 50px;
   margin-left: -9px;
   padding: 10px;
+  font-size: 18px;
+  line-height: 30px;
   background: transparent;
   border: none;
   border-bottom: 3px solid var(--transparent-black10);
@@ -1499,6 +1521,8 @@ img {
   width: 260px;
   min-height: 55px;
   font-family: "Railway", "Impact", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
@@ -1553,7 +1577,9 @@ img {
 
 .footer-logo {
   display: block;
-  margin: 62px 0 20px -2px;
+  margin: 62px 0 28px -2px;
+  width: 145px;
+  height: 36px;
 }
 
 .footer-info {
@@ -1587,7 +1613,8 @@ img {
   min-width: 150px;
   margin-left: -17px;
   color: var(--white);
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
   outline: none;
 }
 
@@ -1601,7 +1628,7 @@ img {
   padding: 1px 11px 5px;
   margin-left: 34px;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 30px;
   color: var(--white);
   text-decoration: none;
   outline: none;
@@ -1907,7 +1934,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 }
 
 fieldset.catalog-filter-group:nth-child(2) {
@@ -1923,10 +1950,12 @@ fieldset.catalog-filter-group:nth-child(2) {
 
 .filter-subtitle {
   position: relative;
+  margin-bottom: 37px;
+  padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  margin-bottom: 37px;
+  letter-spacing: -0.02em;
 }
 
 .filter-subtitle::before {
@@ -2004,12 +2033,16 @@ fieldset.catalog-filter-group:nth-child(2) {
   display: flex;
   margin-left: -6px;
   margin-right: 51px;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .range-input {
   width: 30px;
   padding: 0 2px;
   color: var(--transparent-black30);
+  font-size: 15px;
+  line-height: 18px;
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -2198,15 +2231,20 @@ fieldset.catalog-filter-group:nth-child(2) {
   margin-left: 37px;
 }
 
-.sorting-details-summary {
+.sorting-details-select {
   position: relative;
   display: flex;
-  padding: 4px 41px 7px 13px;
+  padding: 4px 12px 5px 8px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
   outline: none;
   cursor: pointer;
+  border: none;
+  background-color: var(--light-grey);
 }
 
-.sorting-details-summary::before {
+.sorting-details-select::before {
   position: absolute;
   content: "";
   top: 12px;
@@ -2218,23 +2256,23 @@ fieldset.catalog-filter-group:nth-child(2) {
   background-size: 11px 6px;
 }
 
-.sorting-details-summary:hover {
+.sorting-details-select:hover {
   opacity: 0.6;
 }
 
-.sorting-details-summary:focus {
+.sorting-details-select:focus {
   box-shadow: 0 0 0 5px var(--purple);
 }
 
-.sorting-details-summary:not(:focus-visible) {
+.sorting-details-select:not(:focus-visible) {
   box-shadow: none;
 }
 
-.sorting-details-summary:focus-visible {
+.sorting-details-select:focus-visible {
   box-shadow: 0 0 0 5px var(--purple);
 }
 
-.sorting-details-summary:active {
+.sorting-details-select:active {
   opacity: 0.3;
 }
 
@@ -2377,7 +2415,7 @@ fieldset.catalog-filter-group:nth-child(2) {
 
 .button-submit {
   width: 200px;
-  margin-top: -21px;
+  margin-top: -22px;
 }
 
 .services-btn::before,
@@ -2675,6 +2713,7 @@ fieldset.catalog-filter-group:nth-child(2) {
 .delivery-input {
   padding: 0 50px 0 20px;
   height: 60px;
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   border: none;
@@ -2818,8 +2857,9 @@ fieldset.catalog-filter-group:nth-child(2) {
 
 .delivery-input-text {
   width: 560px;
-  padding: 0 20px;
+  padding: 20px 20px;
   margin-bottom: 29px;
+  resize: none;
 }
 
 .button-delivery-form {
@@ -2834,6 +2874,8 @@ fieldset.catalog-filter-group:nth-child(2) {
 
 .amount-input {
   width: 58px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   background-color: var(--light);
   border: none;
