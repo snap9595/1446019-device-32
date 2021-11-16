@@ -41,7 +41,7 @@
                     alt="Любительская селфи-палка." width="41" height="43">
                   <p class="popover-cart-item-text"> Любительская селфи-палка</p>
                 </a>
-                <button class="delete"><span class="visually-hidden">Удалить из корзины.</span>
+                <button type="button" class="delete"><span class="visually-hidden">Удалить из корзины.</span>
                 </button>
               </li>
               <li class="popover-cart-item">
@@ -49,7 +49,7 @@
                   <img src="./img/prof-selfie.jpg" class="pic" alt="Любительская селфи-палка." width="41" height="43">
                   <p class="popover-cart-item-text"> Профессиональная селфи-палка</p>
                 </a>
-                <button class="delete"><span class="visually-hidden">Удалить из корзины.</span>
+                <button type="button" class="delete"><span class="visually-hidden">Удалить из корзины.</span>
                 </button>
               </li>
             </ul>
@@ -215,14 +215,26 @@
           <h2 class="visually-hidden">Товары.</h2>
           <section class="sorting page-container">
             <h2 class="sorting-title">Сортировка:</h2>
-            <div class="sorting-details">
-              <label class="visually-hidden" for="sorting">Сортировка</label>
-              <select class="sorting-details-select" id="sorting">
-                <option value="popular">Сначала популярные</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
-            </div>
+            <form action="https://echo.htmlacademy.ru">
+              <details class="sorting-details">
+                <summary class="sorting-details-summary">
+                  Сначала популярные
+                </summary>
+                <div class="sorting-details-wrap">
+                  <ul class="sorting-details-item">
+                    <li class="sorting-details-list"><a class="sorting-details-list-link" href="blank.html">По рейтингу</a>
+                    </li>
+                    <li class="sorting-details-list"><a class="sorting-details-list-link" href="blank.html">По отзывам</a>
+                    </li>
+                    <li class="sorting-details-list"><a class="sorting-details-list-link" href="blank.html">По обзорам</a>
+                    </li>
+                    <li class="sorting-details-list"><a class="sorting-details-list-link" href="blank.html">По названию</a>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <button class="visually-hidden" type="button">Отсортировать</button>
+            </form>
             <ul class="sorting-breadcrumbs-list">
               <li class="sorting-breadcrumbs-item">
                 <a class="sorting-breadcrumbs-item-link breadcrumbs-up " href="blank.html">
@@ -409,7 +421,7 @@
   <div class="modal-container  ">
     <!--Для отображения окна нужно добавить класс modal-container-open-->
     <div class="modal modal-delivery">
-      <button class="close">
+      <button type="button" class="close">
         <span class="visually-hidden">Закрыть.</span>
       </button>
       <section class="modal-content">
