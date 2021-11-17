@@ -1267,11 +1267,11 @@ img {
   width: 40px;
   height: 40px;
   padding-left: 4px;
-  font-size: 12px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   align-items: center;
+  text-transform: none;
   background: var(--grey);
   border-radius: 50px;
   opacity: 0.5;
