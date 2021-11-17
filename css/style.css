@@ -2270,10 +2270,11 @@ fieldset.catalog-filter-group:nth-child(2) {
   border-radius: 10px;
   box-shadow: 0 10px 0 var(--transparent-black10);
   list-style: none;
+  padding: 10px 10px 10px 30px;
 }
 
-.sorting-details-list {
-  padding-bottom: 10px;
+.sorting-details-list:not(:last-child) {
+  padding-bottom: 7px;
 }
 
 .sorting-details-list-link {
@@ -2286,7 +2287,6 @@ fieldset.catalog-filter-group:nth-child(2) {
 }
 
 .sorting-breadcrumbs-list {
-
   display: flex;
   list-style: none;
   margin-left: auto;
